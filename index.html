@@ -7,19 +7,61 @@
     <script src="./app.js" defer></script>
 </head>
 <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     body {
         background-color: rgba(129, 127, 127, 0.345);
     }
+    
     .container {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 100px;
+        height: 80vh;
+        width: 100%;
+        margin-top: 100px;
 
     }
+    @media(max-width: 600px) {
+        .container {
+            flex-direction: column;
+            margin-top: 500px;
+        }
+        .masalalar button {
+            width: 150px;
+            height: 150px;
+            
+        } 
+        button {
+            margin: none;
+            width: 250px;
+            height: 250px;
+            border-radius: 30px;
+
+        }
+    }
+    @media (max-width: 1200px) {
+        .container {
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 600px;
+        }
+        .masalalar button {
+            width: 250px;
+            height: 250px;
+            
+        } 
+        
+        
+    }
+    
     button {
-        width: 100px;   
-        height: 100px;
+        width: 140px;   
+        height: 140px;
         margin: 10px;
         border-radius: 10px;
         background-color: rgb(0, 0, 0);
@@ -31,7 +73,7 @@
         border: none;
     }
     button:hover {
-        transform: scale(1.1);
+        transform: scale(1);
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
         transition: all 0.3s ease-in-out;
@@ -43,33 +85,33 @@
 
 
     <div class="container">
-        <div>
+        <div class="masalalar">
             <button onclick="toggleContent()" id="toggleButton">
                 1 masala
                 
             </button>
         </div>
-        <div>
+        <div class="masalalar">
             <button onclick="vowels()" id="vowels">
                 2 masala
             </button>
         </div>
-        <div>
+        <div class="masalalar">
             <button onclick="kavlion()" id="kavlion">
                 3 masala
             </button>
         </div>
-        <div>
+        <div class="masalalar">
             <button onclick="numbers()" id="numbers">
                 4 masala
             </button>
         </div>
-        <div>
+        <div class="masalalar">
             <button onclick="even()" id="even">
                 5 masala
             </button>
         </div>
-        <div>
+        <div class="masalalar">
             <button onclick="adds()" id="adds">
                 6 masala
             </button>
