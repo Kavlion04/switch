@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./app.js" defer></script>
+</head>
+<style>
+    body {
+        background-color: rgba(129, 127, 127, 0.345);
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+
+    }
+    button {
+        width: 100px;   
+        height: 100px;
+        margin: 10px;
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        cursor: pointer;
+        transform: scale(0.9);
+        transition: all 0.3s ease-in-out;
+        border: none;
+    }
+    button:hover {
+        transform: scale(1.1);
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        transition: all 0.3s ease-in-out;
+
+    }
+
+</style>
+<body>
+
+
+    <div class="container">
+        <div>
+            <button onclick="toggleContent()" id="toggleButton">
+                1 masala
+                
+            </button>
+        </div>
+        <div>
+            <button onclick="vowels()" id="vowels">
+                2 masala
+            </button>
+        </div>
+        <div>
+            <button onclick="kavlion()" id="kavlion">
+                3 masala
+            </button>
+        </div>
+        <div>
+            <button onclick="numbers()" id="numbers">
+                4 masala
+            </button>
+        </div>
+        <div>
+            <button onclick="even()" id="even">
+                5 masala
+            </button>
+        </div>
+        <div>
+            <button onclick="adds()" id="adds">
+                6 masala
+            </button>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
